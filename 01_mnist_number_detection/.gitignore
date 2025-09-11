@@ -22,12 +22,12 @@ wheels/
 MANIFEST
 
 # PyTorch
-*.pt
-*.pth
+# *.pt
+# *.pth
 
 # Data directories
-data/
-datasets/
+# data/
+# datasets/
 
 # Jupyter Notebook
 .ipynb_checkpoints

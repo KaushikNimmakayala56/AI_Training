@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+from torchvision import datasets, transforms
+
+# Load dataset (train split only for demo)
+transform = transforms.ToTensor()
+train_ds = datasets.MNIST(root="data", train=True, download=True, transform=transform)
+
+# Pick a sample
+image, label = train_ds[1]
+
+print("Image shape:", image.shape)   # (1, 28, 28)
+print("Label:", label)
+
+# Show the image
+plt.imshow(image.squeeze(), cmap="gray")
+plt.title(f"Label: {label}")
+plt.show()
